@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/BensonAD/pen/MZVbgO.
-
- 
+This is a Landing page html, css and lightweight java. Wanted it to manage the websites i get and secure an address.
