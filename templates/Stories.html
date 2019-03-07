@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		        Benson stories
+	</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style02.css') }}">
+</head>
+<body>
+	<h1 id="header">Benson Sanga</h1>
+
+        <script src="https://rawgit.com/ramon82/zuck.js/master/zuck.min.js"></script>
+		<a href="www.bensonad.pro" target="_blank" class="disclaimer">
+			<img src="./static/logo128.png">
+
+			<p>Benson's day to day stories.</p>
+			<p>Updated daily for processes and narrative.</p>
+		</a>
+
+		<div id="stories"></div>
+
+        <div class="skin">
+            Change theme:
+
+            <select id="skin" onchange="location.href=location.href.split('#')[0].split('?')[0]+'?skin='+this.options[this.selectedIndex].value;">
+                <option value="Snapgram">Without fullscreen</option>
+                <option value="FaceSnap">With fullscreen</option>
+                <option value="VemDeZAP">Timeline</option>
+                <option value="Snapssenger">With previews</option>
+            </select>
+        </div>
+        <script  src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
