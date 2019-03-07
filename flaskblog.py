@@ -17,7 +17,6 @@ posts = [
 ]
 
 
-@app.route("/")
 @app.route("/home")
 def home():
     return render_template('home.html', posts=posts)
@@ -33,9 +32,11 @@ def stories():
     return render_template('Stories.html', title='Stories')
 
 
+@app.route("/")
 @app.route("/index")
 def index():
     return render_template('index.html', title='Index')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
