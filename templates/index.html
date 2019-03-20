@@ -8,7 +8,7 @@
 
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
 
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 
 </head>
@@ -26,7 +26,7 @@
 					<a href="https://matokeo00.herokuapp.com/" class="hover-target">Matokeo</a>
 				</li>
 				<li class="case-study-name">
-					<a href="./Stories.html" class="hover-target">Personal</a>
+					<a href="/stories" class="hover-target">Personal</a>
 				</li>
 				<li class="case-study-name">
 					<a href="http://ccresources.herokuapp.com/home" class="hover-target">CC Resources</a>
@@ -81,7 +81,7 @@
 
 
 
-    <script  src="js/index.js"></script>
+    <script  src="{{ url_for('static', filename='js/index.js') }}"></script>
 
 
 
