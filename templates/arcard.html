@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <title>Hello, world!</title>
+    <title>BensonAD Card</title>
     <!-- include three.js library -->
     <script src="{{ url_for('static', filename='js/three.js') }}"></script>
     <script src="{{ url_for('static', filename='js/OBJLoader.js') }}"></script>
@@ -119,16 +119,16 @@ function initialize()
 
     new THREE.MTLLoader()
         .setPath( 'static/models/' )
-        .load( 'card.mtl', function ( materials ) {
+        .load( 'fish-2.mtl', function ( materials ) {
             materials.preload();
             new THREE.OBJLoader()
                 .setMaterials( materials )
                 .setPath( 'static/models/' )
-                .load( 'card.obj', function ( group ) {
+                .load( 'fish-2.obj', function ( group ) {
                     mesh0 = group.children[0];
                     mesh0.material.side = THREE.DoubleSide;
                     mesh0.position.y = 0.25;
-                    mesh0.scale.set(1.25,1.25,1.25);
+                    mesh0.scale.set(0.25,0.25,0.25);
                     markerRoot1.add(mesh0);
                 }, onProgress, onError );
         });
