@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>TEST TWO </title>
-    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-</head>
-
-
-<body style=’margin : 0px; overflow: hidden;’>
-  <a-scene embedded arjs=’sourceType: webcam;’>
-      <a-marker preset=’hiro’>
-        <!-- Adding an OBJ file to an AR Project-->
-        <a-entity
-            obj-model=”obj: url(/static/models/card.obj);
-            mtl: url(/static/models/card.mtl)”>
+  <head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+       <a-entity
+            obj-model="obj: url(https://rishavjayswal.github.io/augmented-reality/resources/couch.obj);
+            mtl: url(https://rishavjayswal.github.io/augmented-reality/resources/couch.mtl)">
         </a-entity>
-
-      </a-marker>
-  <a-entity camera>
-  </a-entity>
-  </a-scene>
-</body>
+    </a-scene>
+  </body>
 </html>
