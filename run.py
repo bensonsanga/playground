@@ -40,7 +40,7 @@ def index():
 
 @app.route("/arcard")
 def arcard():
-    return render_template('arcard.html', title='AR Card')
+    return render_template('card2.html', title='AR Card')
 
 
 if __name__ == '__main__':
