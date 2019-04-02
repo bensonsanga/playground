@@ -119,7 +119,7 @@ function initialize()
 
     new THREE.MTLLoader()
         .setPath( 'static/models/' )
-        .load( 'fish-2.mtl', function ( materials ) {
+        .load( 'card.mtl', function ( materials ) {
             materials.preload();
             new THREE.OBJLoader()
                 .setMaterials( materials )
