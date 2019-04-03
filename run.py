@@ -43,5 +43,10 @@ def arcard():
     return render_template('arcard.html', title='AR Card')
 
 
+@app.route("/slides")
+def slides():
+    return render_template('Slides/index.html', title='AR Card')
+
+
 if __name__ == '__main__':
     app.run(debug=True)

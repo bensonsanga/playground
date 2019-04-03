@@ -1,0 +1,24 @@
+{
+  "name": "reveal.js",
+  "version": "3.8.0",
+  "main": [
+    "js/reveal.js",
+    "css/reveal.css"
+  ],
+  "homepage": "https://ymcmbennie.github.io/portfolio/",
+  "license": "MIT",
+  "description": "Benson AD Presentations",
+  "authors": [
+    "Benson Sanga <bensonsanga@hotmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ymcmbennie/slides"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
