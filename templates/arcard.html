@@ -38,7 +38,7 @@ function initialize()
     let ambientLight = new THREE.AmbientLight( 0xcccccc, 1.0 );
     scene.add( ambientLight );
 
-    var camera = new THREE.Camera();
+    camera = new THREE.Camera();
 	scene.add(camera);
 
     renderer = new THREE.WebGLRenderer({
@@ -114,12 +114,12 @@ function initialize()
 
     new THREE.MTLLoader()
         .setPath( 'static/models/' )
-        .load( 'card.mtl', function ( materials ) {
+        .load( 'eeri.mtl', function ( materials ) {
             materials.preload();
             new THREE.OBJLoader()
                 .setMaterials( materials )
                 .setPath( 'static/models/' )
-                .load( 'card.obj', function ( group ) {
+                .load( 'eeri.obj', function ( group ) {
                     mesh0 = group.children[0];
                     mesh0.material.side = THREE.DoubleSide;
                     mesh0.position.y = 0.25;
